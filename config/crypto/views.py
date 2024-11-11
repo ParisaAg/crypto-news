@@ -12,3 +12,7 @@ def home(request):
 
 
     return render(request,'home.html',{'api' : api,'price':price})
+
+
+def prices(request):
+    return render(request,'prices.html',{})
