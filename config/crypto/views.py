@@ -16,10 +16,6 @@ def home(request):
 
 def prices(request):
     if request.method =='POST':
-        import requests
-        import json
-        crypto_request = requests.get("")
-        crypto = json.loads(crypto_request.content)
         quote= request.POST['quote']
         return render(request,'prices.html',{'quote':quote})
     else:
